@@ -1,0 +1,75 @@
+#floorplan {
+  height: 80vmin;
+  width: 80vmin;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 35% 30% 35%;
+}
+
+#floorplan div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bedroom {
+  background-color: teal;
+  color: white;
+}
+
+.bath {
+  background-color: #718831;
+  color: white;
+}
+
+#livingroom {
+  background-color: #c9ac81;
+  color: white;
+  grid-row: 2 / 3;
+  grid-column: 2;
+}
+
+div#kitchen {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f1a73b;
+  color: white;
+  grid-row: 1 / 4;
+  grid-column: 4 / 5;
+}
+
+div#kitchen span {
+  align-self: start;
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+#bed-1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#bed-2 {
+  grid-row: 3 / 5;
+  grid-column: 1;
+}
+
+#bed-3 {
+  grid-row: 4;
+  grid-column: 2 / 5;
+}
+
+#bath-Master {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#bath-Full {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#bath-Half {
+  grid-row: 3;
+  grid-column: 2;
+}
